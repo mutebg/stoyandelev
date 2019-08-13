@@ -1,0 +1,12 @@
+.blog {
+  background: var(--white);
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__post {
+    padding: 0.2em 0;
+  }
+}

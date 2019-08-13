@@ -1,0 +1,27 @@
+[
+  {
+    "name": "KPN",
+    "logo": "logo",
+    "url": "https://kpn.com"
+  },
+  {
+    "name": "MiniBrew",
+    "logo": "logo",
+    "url": "https://minibrew.io"
+  },
+  {
+    "name": "Burgas Municipality",
+    "logo": "logo",
+    "url": "https://burgas.bg"
+  },
+  {
+    "name": "KRO NCRV",
+    "logo": "logo",
+    "url": "https://www.kro-ncrv.nl/"
+  },
+  {
+    "name": "AVRO TROS",
+    "logo": "logo",
+    "url": "https://www.avrotros.nl/"
+  }
+]

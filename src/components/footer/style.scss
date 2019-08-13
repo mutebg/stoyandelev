@@ -1,0 +1,45 @@
+.footer {
+  .icon {
+    width: 64px;
+    height: 64px;
+    background-color: var(--gray);
+    background-size: 60% 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    -webkit-clip-path: polygon(
+      4px 16px,
+      32px 0,
+      60px 16px,
+      60px 48px,
+      32px 64px,
+      4px 48px
+    );
+    clip-path: polygon(
+      4px 16px,
+      32px 0,
+      60px 16px,
+      60px 48px,
+      32px 64px,
+      4px 48px
+    );
+  }
+  .icon:hover {
+    background-color: #e6e6e6;
+  }
+  .icon svg {
+    width: 32px;
+    height: 32px;
+    fill: blue;
+    margin-top: 16px;
+  }
+  .icon--twitter svg {
+    fill: #55acef;
+  }
+  .icon--github svg {
+    fill: #333;
+  }
+  .icon--linkedin svg {
+    fill: #00669e;
+  }
+}
