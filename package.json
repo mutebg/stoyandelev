@@ -14,7 +14,10 @@
     "test": "jest"
   },
   "eslintConfig": {
-    "extends": "eslint-config-synacor"
+    "extends": "eslint-config-synacor",
+    "rules": {
+      "react/display-name": false
+    }
   },
   "eslintIgnore": [
     "build/*"

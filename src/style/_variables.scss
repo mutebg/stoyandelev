@@ -1,0 +1,20 @@
+$baseFontSize: 16;
+
+$colors: (
+  text: #4e4e4e,
+  bg: #f9f9f9,
+  active: #20639b,
+  //https://refactoring-ui.nyc3.cdn.digitaloceanspaces.com/previews/whats-in-a-color-palette-01.png
+    gray: #ccc,
+  white: #fff,
+  active-dark: #173f5f,
+  active-light: #3caea3,
+  yellow: #f6d55c
+);
+
+$textSizes: (
+  small: 0.75,
+  large: 1.25,
+  title: 2,
+  page: 3
+);

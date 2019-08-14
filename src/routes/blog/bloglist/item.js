@@ -1,14 +1,15 @@
 import { h } from 'preact';
-import './blog.scss';
+import './item.scss';
+import Text from '../../../components/text';
 
 const Blog = ({ title, link, id, short }) => (
 	<li key={id} class="BlogItem">
-		<h3 class="BlogItem__title">
+		<Text bold element="h3" class="BlogItem__title">
 			<a id={id} href={link} target="_blank" rel="noopener noreferrer">
 				{title}
 			</a>
-		</h3>
-		<p class="BlogItem__short">
+		</Text>
+		<Text class="BlogItem__short">
 			{short}
 			<a
 				href={link}
@@ -18,7 +19,7 @@ const Blog = ({ title, link, id, short }) => (
 			>
 				read more
 			</a>
-		</p>
+		</Text>
 	</li>
 );
 

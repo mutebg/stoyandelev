@@ -20,7 +20,9 @@ const About = () => (
 			team as a true fan
 		</p>
 
-		<p>Download CV</p>
+		<p>
+			<a href="#">TODO Download CV</a>
+		</p>
 	</Section>
 );
 

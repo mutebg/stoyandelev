@@ -1,0 +1,33 @@
+@import "style/_variables.scss";
+
+@each $name, $value in $textSizes {
+  .text-#{$name} {
+    font-size: #{$value}rem;
+  }
+}
+
+@each $name, $value in $colors {
+  .text-#{$name} {
+    color: var(--color-#{$name});
+  }
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}

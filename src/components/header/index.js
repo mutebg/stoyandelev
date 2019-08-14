@@ -1,10 +1,13 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
 import './style.scss';
+import Text from '../text';
 
 const Header = () => (
-	<header class="header">
-		<h1>Stoyan Delev</h1>
+	<header class="Header">
+		<Text color="active" size="large" className="Header__title">
+			Stoyan Delev
+		</Text>
 		<nav>
 			<Link activeClassName={'active'} href="/">
 				Home
@@ -12,11 +15,11 @@ const Header = () => (
 			<Link activeClassName={'active'} href="/work">
 				Work
 			</Link>
+			<Link activeClassName={'active'} href="/blog">
+				Articles
+			</Link>
 			<Link activeClassName={'active'} href="/about">
 				About me
-			</Link>
-			<Link activeClassName={'active'} href="/blog">
-				Blog
 			</Link>
 		</nav>
 	</header>

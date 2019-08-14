@@ -1,23 +1,27 @@
 import { h } from 'preact';
 import * as kebab from 'just-kebab-case';
+import Text from '../text';
 
 const Section = ({
 	title,
 	children,
 	className,
-	titleClassName = 'sub-title',
+	titleClassName = '',
 	titleLevel = 'h2',
 	id
 }) => {
 	const elementID = id ? id : kebab(title) + '-heading';
-	const Tag = titleLevel;
 	return (
 		<section class={className} aria-labelledby={id}>
 			<div class="container">
 				{title && (
-					<Tag class={titleClassName} id={elementID}>
+					<Text.Title
+						class={titleClassName}
+						id={elementID}
+						element={titleLevel}
+					>
 						{title}
-					</Tag>
+					</Text.Title>
 				)}
 				{children}
 			</div>

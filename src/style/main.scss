@@ -1,0 +1,104 @@
+@import "./variables";
+
+:root {
+  @each $name, $value in $colors {
+    --color-#{$name}: #{$value};
+  }
+  @each $name, $value in $textSizes {
+    --size-#{$name}: #{$value}rem;
+  }
+}
+
+// @media screen and (prefers-color-scheme: dark) {
+//   :root {
+//     --text: #f9f9f9;
+//     --bg: #4e4e4e;
+//     --active: #fbf7f7;
+//     --gray: #ccc;
+//     --white: #3a3a3a;
+//   }
+// }
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: var(--color-text);
+  font-weight: 300;
+  background-color: var(--color-bg);
+  font-family: sans-serif;
+  margin: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--color-active);
+}
+
+a:hover {
+  color: var(--color-white);
+  background: var(--color-active);
+  text-decoration: none;
+}
+
+:focus {
+  outline: 3px dotted var(--color-active) !important;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  padding: 56px 0 0 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 90%;
+}
+
+.centre {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// .title {
+//   font-size: 3rem;
+//   margin: 0.3em auto 1em auto;
+//   letter-spacing: -2px;
+//   font-weight: 300;
+//   line-height: 1.1;
+//   color: var(--color-active-dark);
+// }
+
+// .sub-title {
+//   font-weight: 300;
+//   font-size: 1.8rem;
+//   margin: 0;
+//   color: var(--color-active-dark);
+// }
+
+// .text {
+//   color: var(--color-text);
+//   font-weight: 200;
+//   line-height: 1.4;
+//   width: 70%;
+//   margin-left: auto;
+//   margin-right: auto;
+// }

@@ -26,7 +26,7 @@ const Work = () => (
 		</Section>
 
 		<Section title="My vision">
-			<p>My vision of the web</p>
+			<p>My vision for the web</p>
 		</Section>
 
 		<Section title="Use cases">
