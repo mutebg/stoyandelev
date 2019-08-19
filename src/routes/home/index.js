@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import Hero from './hero';
+import Hero from '../../components/hero';
 import BlogList from '../../components/bloglist';
 import Section from '../../components/section';
 import blogData from '../../data/blog.json';
@@ -7,7 +7,7 @@ import blogData from '../../data/blog.json';
 const Home = () => (
 	<div>
 		<Hero />
-		<Section id="blog">
+		<Section id="blog" title="Latest articles">
 			<BlogList items={blogData.items.slice(5)} />
 			<p>
 				<a href="/blog">All blog posts</a>

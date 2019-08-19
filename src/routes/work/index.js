@@ -1,17 +1,21 @@
 import { h } from 'preact';
 import style from './style';
 import Section from '../../components/section';
+import Text from '../../components/text';
 import useCases from '../../data/casestudies.json';
 import sideProjects from '../../data/sideprojects.json';
 import clients from '../../data/clients.json';
 import recomendations from '../../data/recomendations.json';
 
+const yearsExpiriance = () => new Date().getFullYear() - 2007;
+
 const Work = () => (
 	<div class={style.home}>
 		<Section title="What I do">
 			<p>
-				I build for the web for more than ten years, and I love doing it and
-				truly believe that the Web is the most amazing platform ever created.
+				I build for the web for more than {yearsExpiriance()} years, and I love
+				doing it and truly believe that the Web is the most amazing platform
+				ever created.
 			</p>
 
 			<p>
@@ -20,16 +24,16 @@ const Work = () => (
 			</p>
 
 			<p>
-				My current stack includes different technologies such as (p)React,
-				Redux, RxJS, Polymer, SCSS, ES2015+, Elm.
+				My current stack is mainly based on React and its ecosystem, but I also
+				have experience with Angular, Elm and other frameworks.
 			</p>
 		</Section>
 
-		<Section title="My vision">
+		{/* <Section title="My vision">
 			<p>My vision for the web</p>
-		</Section>
+		</Section> */}
 
-		<Section title="Use cases">
+		{/* <Section title="Use cases">
 			<ul>
 				{useCases.map(({ name, link }) => (
 					<li>
@@ -39,26 +43,43 @@ const Work = () => (
 					</li>
 				))}
 			</ul>
-		</Section>
+		</Section> */}
 
 		<Section title="Side projects">
 			<ul>
 				{sideProjects.map(({ name, description, code_url, url }) => (
-					<li>
-						<h3>
-							<a href={url || code_url}>{name}</a>
-						</h3>
-						<p>{description}</p>
-						{code_url && <a href={code_url}>View code</a>}
-						{url && <a href={url}>View project</a>}
+					<li class="mb-6">
+						<Text bold element="h3" className="mb-3" size="large">
+							<a
+								href={url || code_url}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								{name}
+							</a>
+						</Text>
+						<Text>
+							{description}
+
+							{code_url && (
+								<a href={code_url} target="_blank" rel="noopener noreferrer">
+									View code
+								</a>
+							)}
+							{url && (
+								<a href={url} target="_blank" rel="noopener noreferrer">
+									View project
+								</a>
+							)}
+						</Text>
 					</li>
 				))}
 			</ul>
 		</Section>
 
-		<Section title="Profesional projects">
+		{/* <Section title="Profesional projects">
 			<ul />
-		</Section>
+		</Section> */}
 
 		<Section title="Clients">
 			<ul>

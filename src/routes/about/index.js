@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import style from './style';
+import './style';
 
 import Section from '../../components/section';
 
@@ -19,6 +19,8 @@ const About = () => (
 			love with watching and playing football and every week I support my local
 			team as a true fan
 		</p>
+
+		<p>TODO: Sport - Running </p>
 
 		<p>
 			<a href="#">TODO Download CV</a>

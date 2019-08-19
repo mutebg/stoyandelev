@@ -5,8 +5,8 @@ import Text from '../text';
 const Section = ({
 	title,
 	children,
-	className,
-	titleClassName = '',
+	className = 'mt-8',
+	titleClassName = 'mb-4',
 	titleLevel = 'h2',
 	id
 }) => {
@@ -16,7 +16,7 @@ const Section = ({
 			<div class="container">
 				{title && (
 					<Text.Title
-						class={titleClassName}
+						className={titleClassName}
 						id={elementID}
 						element={titleLevel}
 					>
