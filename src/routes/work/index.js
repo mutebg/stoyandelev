@@ -1,7 +1,8 @@
 import { h } from 'preact';
-import style from './style';
+import style from './style.scss';
 import Section from '../../components/section';
 import Text from '../../components/text';
+import Button from '../../components/button';
 import useCases from '../../data/casestudies.json';
 import sideProjects from '../../data/sideprojects.json';
 import clients from '../../data/clients.json';
@@ -48,8 +49,8 @@ const Work = () => (
 		<Section title="Side projects">
 			<ul>
 				{sideProjects.map(({ name, description, code_url, url }) => (
-					<li class="mb-6">
-						<Text bold element="h3" className="mb-3" size="large">
+					<li class="mb-7">
+						<Text element="h3" className="mb-3" size="large">
 							<a
 								href={url || code_url}
 								target="_blank"
@@ -58,20 +59,29 @@ const Work = () => (
 								{name}
 							</a>
 						</Text>
-						<Text>
-							{description}
-
-							{code_url && (
-								<a href={code_url} target="_blank" rel="noopener noreferrer">
-									View code
-								</a>
-							)}
-							{url && (
-								<a href={url} target="_blank" rel="noopener noreferrer">
-									View project
-								</a>
-							)}
-						</Text>
+						<Text className="mb-3">{description}</Text>
+						{code_url && (
+							<Button
+								type="trans"
+								size="small"
+								href={code_url}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="mr-3"
+							>
+								view code
+							</Button>
+						)}
+						{url && (
+							<Button
+								size="small"
+								href={url}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								view project
+							</Button>
+						)}
 					</li>
 				))}
 			</ul>
@@ -82,15 +92,23 @@ const Work = () => (
 		</Section> */}
 
 		<Section title="Clients">
-			<ul>
+			<ul class="clients">
 				{clients.map(({ name, logo, url }) => (
 					<li>
-						<h3>
-							<a href={url}>
-								{logo && <img src={logo} alt="" />}
-								{name}
-							</a>
-						</h3>
+						{logo && (
+							<picture>
+								<source
+									type="image/webp"
+									srcset={`/assets/clients/${logo}.jpg`}
+								/>
+								<img
+									loading="lazy"
+									src={`/assets/clients/${logo}.jpg`}
+									alt={`Logo of ${name}`}
+								/>
+							</picture>
+						)}
+						{name}
 					</li>
 				))}
 			</ul>

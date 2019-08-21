@@ -2,10 +2,11 @@ $baseFontSize: 16;
 
 $colors: (
   text: #4e4e4e,
-  bg: #f9f9f9,
-  active: #20639b,
+  bg: #f8f9fa,
+  active: #1a73e8,
   //https://refactoring-ui.nyc3.cdn.digitaloceanspaces.com/previews/whats-in-a-color-palette-01.png
-    gray: #ccc,
+    gray: #707070,
+  gray-light: #9aa0a6,
   white: #fff,
   active-dark: #173f5f,
   active-light: #3caea3,
@@ -16,5 +17,14 @@ $textSizes: (
   small: 0.75,
   large: 1.25,
   title: 2.25,
-  page: 3
+  page: 3.25
+);
+
+$breakpoints: (
+  "xs": 568px,
+  "sm": 768px,
+  "md": 1024px,
+  "lg": 1176px,
+  "xl": 1440px,
+  "xxl": 1680px
 );

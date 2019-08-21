@@ -12,6 +12,18 @@
   }
 }
 
+.text-title {
+  text-transform: lowercase;
+  &:before {
+    content: "// ";
+    color: var(--color-gray-light);
+  }
+  &:after {
+    content: "";
+    color: var(--color-gray-light);
+  }
+}
+
 .text-upper {
   text-transform: uppercase;
 }
@@ -30,4 +42,8 @@
 
 .text-italic {
   font-style: italic;
+}
+
+.text-block {
+  display: block;
 }

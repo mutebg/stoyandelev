@@ -43,17 +43,17 @@ body {
 
 a {
   color: var(--color-active);
+  text-decoration: none;
 }
 
 a:hover {
   color: var(--color-white);
   background: var(--color-active);
-  text-decoration: none;
 }
 
 :focus {
   outline: 3px dotted var(--color-active) !important;
-  text-decoration: none;
+  //text-decoration: none;
 }
 
 ul,

@@ -1,0 +1,28 @@
+@import "./variables";
+
+@mixin respond-to($breakpoint) {
+  $width: map-get($breakpoints, $breakpoint);
+
+  @if not $width {
+    $width: $breakpoint;
+  } @else {
+    $width: $width - 1;
+  }
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+/// Min Responsive manager.
+/// @param {String} $breakpoint - Breakpoint or value ( 1000px )
+/// @requires $breakpoints
+@mixin respond-from($breakpoint) {
+  $width: map-get($breakpoints, $breakpoint);
+
+  @if not $width {
+    $width: $breakpoint;
+  }
+  @media (min-width: #{$width}) {
+    @content;
+  }
+}

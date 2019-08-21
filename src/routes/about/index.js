@@ -20,7 +20,13 @@ const About = () => (
 			team as a true fan
 		</p>
 
+		<p>Husband and father </p>
+
 		<p>TODO: Sport - Running </p>
+
+		<p>Beer lover</p>
+
+		<p>TODO: BurgasLab Meetup organizer </p>
 
 		<p>
 			<a href="#">TODO Download CV</a>

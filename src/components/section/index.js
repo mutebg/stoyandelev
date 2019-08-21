@@ -19,6 +19,8 @@ const Section = ({
 						className={titleClassName}
 						id={elementID}
 						element={titleLevel}
+						color="gray"
+						bold
 					>
 						{title}
 					</Text.Title>

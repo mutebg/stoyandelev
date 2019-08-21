@@ -1,0 +1,21 @@
+@import "../../style/mixins";
+
+.more-on-this {
+  @include respond-from("xs") {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    height: 100px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.13);
+    @include respond-from("xs") {
+      height: 150px;
+    }
+  }
+}

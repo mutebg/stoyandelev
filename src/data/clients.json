@@ -1,27 +1,37 @@
 [
   {
     "name": "KPN",
-    "logo": "logo",
+    "logo": "kpn",
     "url": "https://kpn.com"
   },
   {
+    "name": "Kverneland",
+    "logo": "kverneland",
+    "url": "https://ien.kvernelandgroup.com/"
+  },
+  {
     "name": "MiniBrew",
-    "logo": "logo",
+    "logo": "minibrew",
     "url": "https://minibrew.io"
   },
   {
     "name": "Burgas Municipality",
-    "logo": "logo",
+    "logo": "burgas",
     "url": "https://burgas.bg"
   },
   {
     "name": "KRO NCRV",
-    "logo": "logo",
+    "logo": "kroncrv",
     "url": "https://www.kro-ncrv.nl/"
   },
   {
     "name": "AVRO TROS",
-    "logo": "logo",
+    "logo": "avrotros",
     "url": "https://www.avrotros.nl/"
+  },
+  {
+    "name": "Floriade",
+    "logo": "floriade",
+    "url": "https://floriade.com/"
   }
 ]

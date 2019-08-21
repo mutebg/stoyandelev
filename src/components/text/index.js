@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import './style.scss';
 
-const other = ['bold', 'italic', 'center', 'upper', 'light'];
+const other = ['bold', 'italic', 'center', 'upper', 'light', 'block'];
 
 const addClass = (className = '', options, props) => {
 	options.forEach(option => {

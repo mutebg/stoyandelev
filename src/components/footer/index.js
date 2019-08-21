@@ -1,36 +1,16 @@
 import { h } from 'preact';
 import './style.scss';
 import Section from '../section';
+import Text from '../text';
 
 const Footer = () => (
-	<footer class="footer centre">
+	<footer class="footer centre pb-8 pt-1 mt-8">
 		<Section id="contacts" title="Contact me">
-			<p class="text">
-				I like to{' '}
-				<a
-					target="_blank"
-					rel="noopener"
-					title="Twitter profile"
-					href="https://twitter.com/mutebg"
-				>
-					tweet
-				</a>{' '}
-				about web development,
-				<br />
-				sometimes I even write about it in
-				<a
-					target="_blank"
-					rel="noopener"
-					title="Medium blog"
-					href="https://medium.com/@mutebg"
-				>
-					{' '}
-					medium
-				</a>
-				<br />I can be reached at{' '}
+			<Text className="mb-6">
+				I can be reached at{' '}
 				<a href="mailto:i@stoyandelev.com">i@stoyandelev.com</a>
-			</p>
-			<p>
+			</Text>
+			<div>
 				<a
 					class="icon icon--twitter"
 					rel="noopener"
@@ -87,7 +67,7 @@ const Footer = () => (
 						</g>
 					</svg>
 				</a>
-			</p>
+			</div>
 		</Section>
 	</footer>
 );

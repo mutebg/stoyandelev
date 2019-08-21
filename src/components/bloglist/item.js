@@ -3,8 +3,8 @@ import './item.scss';
 import Text from '../text';
 
 const Blog = ({ title, link, id, short }) => (
-	<li key={id} class="mb-6">
-		<Text bold element="h3" className="mb-3" size="large">
+	<li key={id} class="mb-7">
+		<Text element="h3" className="mb-3" size="large">
 			<a id={id} href={link} target="_blank" rel="noopener noreferrer">
 				{title}
 			</a>
