@@ -11,15 +11,13 @@
   }
 }
 
-// @media screen and (prefers-color-scheme: dark) {
-//   :root {
-//     --text: #f9f9f9;
-//     --bg: #4e4e4e;
-//     --active: #fbf7f7;
-//     --gray: #ccc;
-//     --white: #3a3a3a;
-//   }
-// }
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    // @each $name, $value in $colors-dark {
+    //   --color-#{$name}: #{$value};
+    // }
+  }
+}
 
 html {
   font-family: sans-serif;

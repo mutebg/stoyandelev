@@ -11,7 +11,7 @@ import recomendations from '../../data/recomendations.json';
 const yearsExpiriance = () => new Date().getFullYear() - 2007;
 
 const Work = () => (
-	<div class={style.home}>
+	<div>
 		<Section title="What I do">
 			<p>
 				I build for the web for more than {yearsExpiriance()} years, and I love

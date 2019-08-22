@@ -7,8 +7,21 @@ $colors: (
   //https://refactoring-ui.nyc3.cdn.digitaloceanspaces.com/previews/whats-in-a-color-palette-01.png
     gray: #707070,
   gray-light: #9aa0a6,
+  gray-2: #dcdcdc,
   white: #fff,
   active-dark: #173f5f,
+  active-light: #3caea3,
+  yellow: #f6d55c
+);
+$colors-dark: (
+  text: #f9f9f9,
+  bg: #404040,
+  active: #dbe6f5,
+  gray: #ccc,
+  gray-light: #9aa0a6,
+  gray-2: #2f2e2e,
+  white: #2f2e2e,
+  active-dark: #fff,
   active-light: #3caea3,
   yellow: #f6d55c
 );
@@ -16,6 +29,7 @@ $colors: (
 $textSizes: (
   small: 0.75,
   large: 1.25,
+  xlarge: 1.5,
   title: 2.25,
   page: 3.25
 );

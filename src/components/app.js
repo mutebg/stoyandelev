@@ -9,6 +9,7 @@ import Home from '../routes/home';
 import Blog from '../routes/blog';
 import Work from '../routes/work';
 import About from '../routes/about';
+import Talks from '../routes/talks';
 
 export default class App extends Component {
 
@@ -30,6 +31,7 @@ export default class App extends Component {
 						<Blog path="/blog" />
 						<Work path="/work" />
 						<About path="/about" />
+						<Talks path="/talks" />
 					</Router>
 				</main>
 				<Footer />
